@@ -5,11 +5,10 @@
 <input
   type="text"
   class="form-control"
-  [(ngModel)]="userMessage">
-  <p>{{ userMessage }}</p>
+  [(ngModel)]="animalName">
 <button
   class="btn btn-primary"
   [disabled]="!satisfyingClick"
-  (click)="onClick()">Click Me</button>
+  (click)="onClick()">Confirm your animal</button>
 <p>{{ buttonClickMessage }}</p>
 <app-test></app-test>

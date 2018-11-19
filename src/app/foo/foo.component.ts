@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooComponent implements OnInit {
   satisfyingClick = true
-  buttonClickMessage = 'go on, click the button'
-  userMessage = 'Type a message here'
+  buttonClickMessage = ''
+  animalName = 'Type an animal here'
 
   constructor() {
     
@@ -18,10 +18,10 @@ export class FooComponent implements OnInit {
   }
 
   onClick() {
-    this.buttonClickMessage = 'clicking buttons makes things happen'
+    this.buttonClickMessage = 'If you could be an animal it would be a ' + this.animalName
   }
 
   onUpdateMessage(event) {
-    this.userMessage = event.target.value
+    this.animalName = event.target.value
   }
 }
