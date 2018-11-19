@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class FooComponent implements OnInit {
   satisfyingClick = true
   buttonClickMessage = 'go on, click the button'
-  userMessage = ''
+  userMessage = 'Type a message here'
 
   constructor() {
     

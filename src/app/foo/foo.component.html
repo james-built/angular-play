@@ -2,7 +2,11 @@
   type="text"
   class="form-control"
   (input)="onUpdateMessage($event)"> <!-- $event variable captures the data tied to the event, in this case the input event-->
-<p>{{ userMessage }}</p>
+<input
+  type="text"
+  class="form-control"
+  [(ngModel)]="userMessage">
+  <p>{{ userMessage }}</p>
 <button
   class="btn btn-primary"
   [disabled]="!satisfyingClick"
