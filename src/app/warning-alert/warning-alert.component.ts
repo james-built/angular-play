@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-WarningAlert',
+  selector: 'app-warning-alert',
   template: '<p>Fatal Error!</p>',
   styles: [`
   p {
@@ -11,6 +11,6 @@ import { Component } from "@angular/core";
   }
   `]
 })
-export class WarningAlert {
+export class WarningAlertComponent {
 
 }
