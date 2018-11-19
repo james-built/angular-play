@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./foo.component.css']
 })
 export class FooComponent implements OnInit {
-  satisfyingClick = false
+  satisfyingClick = true
+  buttonClickMessage = 'go on, click the button'
+
   constructor() {
     
   }
@@ -14,4 +16,7 @@ export class FooComponent implements OnInit {
   ngOnInit() {
   }
 
+  onClick() {
+    this.buttonClickMessage = 'clicking buttons makes things happen'
+  }
 }
