@@ -5,5 +5,5 @@ import { Component } from "@angular/core";
   templateUrl: './test.component.html'
 }) // decorator function configures this class for angular
 export class TestComponent {
-  
+  data: string = "something to show"
 }
