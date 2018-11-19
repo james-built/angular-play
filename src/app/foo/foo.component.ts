@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class FooComponent implements OnInit {
   satisfyingClick = true
   buttonClickMessage = 'go on, click the button'
+  userMessage = ''
 
   constructor() {
     
@@ -18,5 +19,9 @@ export class FooComponent implements OnInit {
 
   onClick() {
     this.buttonClickMessage = 'clicking buttons makes things happen'
+  }
+
+  onUpdateMessage(event) {
+    this.userMessage = event.target.value
   }
 }
