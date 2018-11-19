@@ -1,4 +1,14 @@
-<input type="text" [(ngModel)]="name">
-<p>{{ name }}</p>
-<hr>
-<app-foo></app-foo>
+<div class="container">
+  <div class="row">
+    <h2>Angular App #1</h2>
+  </div>
+  <div class="row">
+    <p>give me your name:</p>
+      <input type="text" [(ngModel)]="name">
+  </div>
+  <div class="row">
+    <p>Welcome {{ name }}</p>
+  </div>
+  <hr>
+  <app-foo></app-foo>
+</div>
